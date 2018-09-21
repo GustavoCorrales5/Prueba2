@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<BorderPane minHeight="900.0" minWidth="2000.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CampoController2">
+   <center>
+      <HBox BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="bandera" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="visor" accessibleRole="BUTTON" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#atraparPokemon" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+         </children>
+      </HBox>
+   </center>
+</BorderPane>
